@@ -6,7 +6,7 @@ Get a full fake REST API with **zero coding** by writing a [RAML](http://raml.or
 ###Install
 
 ```
-$ npm install -g json-server
+$ npm install -g raml-server
 ```
 
 ###Usage
