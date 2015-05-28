@@ -1,0 +1,24 @@
+{
+  "name": "raml-server",
+  "description": "Run a server based on RAML files .. zero coding",
+  "version": "0.0.1",
+  "author": {
+    "name": "Franco Arolfo",
+    "email": "francoarolfo@hotmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/farolfo/raml-server/issues"
+  },
+  "dependencies": {
+    "json-server": "^0.7.11",
+    "raml-mocker": "^0.1.12",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {},
+  "homepage": "https://github.com/farolfo/raml-server",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/farolfo/raml-server.git"
+  }
+}
