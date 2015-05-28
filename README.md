@@ -11,7 +11,7 @@ $ npm install -g raml-server
 
 ###Usage
 
-Start a RAML server based on a RAML spec
+Start a server based on a RAML spec
 
 ```
 $ raml-server exampleApi.raml
