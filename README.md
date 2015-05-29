@@ -1,7 +1,7 @@
 # RAML Server [![](https://badge.fury.io/js/raml-server.svg)](http://badge.fury.io/js/raml-server)
 Get a full fake REST API with **zero coding** by writing a [RAML](http://raml.org/) spec.
 
-**Why to build a new RAML based server?** Cause this one works with [JSON-Server](https://github.com/typicode/json-server), so no much code to do (maintain).
+**Why building a new RAML based server?** Cause this one works with [JSON-Server](https://github.com/typicode/json-server), so no much code to do (maintain).
 
 ###Install
 
