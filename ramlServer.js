@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 //     RAML Server 0.1.1
 
 //     (c) 2015 Franco Arolfo

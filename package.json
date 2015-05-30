@@ -1,7 +1,7 @@
 {
   "name": "raml-server",
   "description": "Run a server based on RAML files .. zero coding",
-  "version": "0.2.0-0",
+  "version": "0.1.1",
   "author": {
     "name": "Franco Arolfo",
     "email": "francoarolfo@hotmail.com"
@@ -17,6 +17,9 @@
   "devDependencies": {},
   "homepage": "https://github.com/farolfo/raml-server",
   "license": "MIT",
+  "bin": {
+    "raml-server": "raml-server.js"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/farolfo/raml-server.git"
