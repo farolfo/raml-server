@@ -18,7 +18,7 @@
   "homepage": "https://github.com/farolfo/raml-server",
   "license": "MIT",
   "bin": {
-    "raml-server": "raml-server.js"
+    "raml-server": "ramlServer.js"
   },
   "repository": {
     "type": "git",
