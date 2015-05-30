@@ -3,16 +3,8 @@
 title: World Music API
 baseUri: http://example.api.com/{version}
 version: v1
-traits:
-  - paged:
-    queryParameters:
-      pages:
-        description: The number of pages to return
-        type: number
-  - secured: !include http://raml-example.com/secured.yml
 
 /songs:
-  is: [ paged, secured]
   get:
     queryParameters:
       genre:

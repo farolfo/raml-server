@@ -3,14 +3,27 @@ var ramlMocker = require('raml-mocker'),
     jsonServer = require('json-server');
 
 var options = {
-        path: process.argv[2]
+        path: '.'
     },
+    mocksAmount = 10,
     server,
     router;
 
 function reqToDBEntry(request) {
-    console.log(JSON.stringify(request));
-    return {a: [{asd: 1}]};
+    var resource = request.uri.split('/')[1],
+        obj = {};
+    obj[resource] = asList(request.mock, mocksAmount);
+    return obj;
+}
+
+function asList(func, n) {
+  if (n <= 0) {
+    return [];
+  }
+
+  var ans = [];
+  ans.push(func());
+  return ans.concat(asList(func, n-1));
 }
 
 function generateServer(db) {
@@ -24,5 +37,5 @@ function generateServer(db) {
 }
 
 ramlMocker.generate(options, function (requestsToMock) {
-    _.compose(generateServer, _.extend, _.map)(requestsToMock, reqToDBEntry);
+    generateServer(_.reduce(_.map(requestsToMock, reqToDBEntry), _.extend, {}));
 });
