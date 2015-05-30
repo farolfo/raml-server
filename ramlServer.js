@@ -13,6 +13,7 @@ var options = {
         path: '.'
     },
     mocksAmount = 10,
+    port = 3000,
     server,
     router;
 
@@ -40,7 +41,8 @@ function generateServer(db) {
     server.use(jsonServer.defaults);
     server.use(router);
 
-    server.listen(3000);
+    console.log('Running RAML server on localhost:' + port + '...');
+    server.listen(port);
 }
 
 ramlMocker.generate(options, function (requestsToMock) {
