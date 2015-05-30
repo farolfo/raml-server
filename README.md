@@ -17,7 +17,7 @@ Start a server based on a RAML spec
 $ raml-server exampleApi.raml
 ```
 
-And hit ```localhost:3000```.
+And hit ```localhost:3000/songs```. Also, later POSTs to /songs on the server will be saved!
 
 ###How it works?
 This is done by generating responses' data reading the JSON schemas with the [RAML Mocker](https://github.com/RePoChO/raml-mocker), and run with [JSON-Server](https://github.com/typicode/json-server).

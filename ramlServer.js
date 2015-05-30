@@ -1,3 +1,10 @@
+//     RAML Server 0.1.1
+
+//     (c) 2015 Franco Arolfo
+//     RAML Server may be freely distributed under the MIT license.
+//     For all details and documentation:
+//     https://github.com/farolfo/raml-server
+
 var ramlMocker = require('raml-mocker'),
     _ = require('underscore'),
     jsonServer = require('json-server');
