@@ -3,7 +3,13 @@ Get a full fake REST API with **zero coding** by writing a [RAML](http://raml.or
 
 **Why building a new RAML based server?** Cause this one works with [JSON-Server](https://github.com/typicode/json-server), so no much code to do (maintain).
 
+This is an open source project, so issues, PRs and suggestions are wellcome.
+
 ### Install
+
+RAML Server is tested on node v0.12. If you don't have node, installing it via [nvm](https://github.com/creationix/nvm) is recommended.
+
+If you have node installed, run
 
 ```
 $ npm install -g raml-server
@@ -18,6 +24,8 @@ $ raml-server exampleApi.raml
 ```
 
 And hit ```localhost:3000/songs```. Also, later POSTs to /songs on the server will be saved!
+
+Next version of the RAML Server will start a server based on the ```api.raml``` file that is on the current directory if no argument is provided.
 
 ### How it works?
 
