@@ -7,7 +7,7 @@ This is an open source project, so issues, PRs and suggestions are wellcome.
 
 ### Install
 
-RAML Server is tested on node v0.12. If you don't have node, installing it via [nvm](https://github.com/creationix/nvm) is recommended.
+RAML Server is tested under node v0.12. If you don't have node installed yet, doing it via [nvm](https://github.com/creationix/nvm) is recommended.
 
 If you have node installed, run
 
