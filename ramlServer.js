@@ -14,7 +14,7 @@ var options = {
         path: '.'
     },
     mocksAmount = 10,
-    port = 3000,
+    port = process.env.PORT || 3000,
     server,
     router;
 
