@@ -25,13 +25,13 @@ $ raml-server exampleApi.raml
 
 And hit ```localhost:3000/songs```. Also, later POSTs to /songs on the server will be saved!
 
-Next version of the RAML Server will start a server based on the ```api.raml``` file that is on the current directory if no argument is provided.
-
 ### How it works?
 
 This is done by generating responses' data reading the JSON schemas with the [RAML Mocker](https://github.com/RePoChO/raml-mocker), and run with [JSON-Server](https://github.com/typicode/json-server).
 
-### Known limitations
+### Next release fixes
 
-* Support for only 1 RAML file as command line argument.
-* No nested resources mapped (only routes the JSON schema of the top level resources, like /songs).
+* Support _imports_ in RAML.
+* Support nested resources (today it only routes the JSON schema of the top level resources, like /songs).
+* RAML 1.0.
+* Start a server based on the ```api.raml``` file that is on the current directory if no argument is provided.
