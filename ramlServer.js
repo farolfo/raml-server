@@ -21,7 +21,11 @@ var options = {
 function reqToDBEntry(request) {
     var resource = request.uri.split('/')[1],
         obj = {};
-    obj[resource] = asList(request.mock, mocksAmount);
+
+    obj[resource] = request.mock == undefined
+      ? {}
+      : asList(request.mock, mocksAmount);
+
     return obj;
 }
 
