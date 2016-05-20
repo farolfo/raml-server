@@ -24,7 +24,7 @@ function reqToDBEntry(request) {
 
     obj[resource] = request.mock == undefined
       ? {}
-      : request.mock();
+      : asList(request.mock, mocksAmount);
 
     return obj;
 }
