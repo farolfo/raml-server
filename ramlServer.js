@@ -19,9 +19,9 @@ var options = {
     router;
 
 function reqToDBEntry(request) {
-    var resource = request.uri.split('/')[1],
+    var resource = request.uri.substr(1),
         obj = {};
-    obj[resource] = asList(request.mock, mocksAmount);
+    obj[resource] = request.mock();
     return obj;
 }
 
