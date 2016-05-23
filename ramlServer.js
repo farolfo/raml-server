@@ -23,7 +23,7 @@ function reqToDBEntry(request) {
         obj = {};
     obj[resource] = request.mock == undefined
       ? {}
-      :request.mock();
+      : request.mock();
     return obj;
 }
 
