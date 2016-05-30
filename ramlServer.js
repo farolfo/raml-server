@@ -8,10 +8,11 @@
 
 var ramlMocker = require('raml-mocker'),
     _ = require('underscore'),
-    jsonServer = require('json-server');
+    jsonServer = require('json-server'),
+    argv = require('yargs').argv;;
 
 var options = {
-        path: '.'
+        path: argv.path || '.'
     },
     mocksAmount = 10,
     port = process.env.PORT || 3000,
