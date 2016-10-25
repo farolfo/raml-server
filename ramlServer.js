@@ -60,3 +60,7 @@ function generateServer(db) {
 ramlMocker.generate(options, function (requestsToMock) {
     generateServer(_.reduce(_.map(requestsToMock, reqToDBEntry), _.extend, {}));
 });
+
+process.on('SIGTERM', function() {
+    process.exit();
+});
