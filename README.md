@@ -36,6 +36,6 @@ This is done by generating responses' data reading the JSON schemas with the [RA
 * RAML 1.0.
 * Start a server based on the ```api.raml``` file that is on the current directory if no argument is provided.
 
-###As seen at
+### As seen at
 
 * http://www.programmableweb.com/news/standalone-raml-api-mocking-tools-surface/2015/08/13
